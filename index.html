@@ -69,12 +69,17 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "movie6") {
           $("#movie-text").text("YESSSS!");
         } 
         else {
           $("#movie-text").text("Try Again!");
         }
+
+        $("#movie-text").click(function () {
+          $answer.hide().fadeIn(1000);
+          $answer.hide().fadeIn(1000);
+        });
       });
 
       //=======================Book Question jQuery Code
@@ -85,10 +90,10 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+          $("#book-text").text("YOUR CORRECT!!!!! YAYAYAYAYAY!!");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#book-text").text("NOPE!!!");
         }
       });
       
